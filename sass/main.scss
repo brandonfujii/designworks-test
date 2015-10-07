@@ -224,6 +224,55 @@ body {
 			}
 		}
 
+		.connect {
+			@include sect($black);
+			text-align: center;
+
+			h1 {
+				@include title(#fafafa);
+			}
+
+			ul {
+				margin-top: 50px;
+				margin-bottom: 50px;
+				text-align: center;
+				li {
+					width: 30%;
+					display: inline-block;
+					a {
+						display: block;
+						position:relative;
+						text-decoration: none;
+						color: #fafafa;
+
+
+						.fa {
+							font-size: 5em;
+						}
+					}
+				}
+
+			}
+
+		}
+
+		footer {
+			@include sect($black);
+			padding-bottom: 25px;
+
+			hr {
+				width: 50%;
+
+			}
+
+			p {
+				@include font(300);
+				padding-top: 25px;
+				text-align:center;
+			}
+		}
+
+
 
 	}
 }

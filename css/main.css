@@ -165,6 +165,51 @@ body main .skills {
         color: #2F363B;
         line-height: 1.5em; }
 
+body main .connect {
+  width: 100%;
+  background-color: #2F363B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+  body main .connect h1 {
+    font-size: 3em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  body main .connect ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center; }
+    body main .connect ul li {
+      width: 30%;
+      display: inline-block; }
+      body main .connect ul li a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: #fafafa; }
+        body main .connect ul li a .fa {
+          font-size: 5em; }
+
+body main footer {
+  width: 100%;
+  background-color: #2F363B;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-bottom: 25px; }
+  body main footer hr {
+    width: 50%; }
+  body main footer p {
+    font-size: 1em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    padding-top: 25px;
+    text-align: center; }
+
 @media screen and (max-width: 870px) {
   body main .skills ul li .graphic {
     width: 100%; }
