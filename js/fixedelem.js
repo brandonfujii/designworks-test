@@ -36,3 +36,18 @@ $socialIcon.on("mouseleave", function() {
 	}, 200);
 })
 
+
+var $hamburger = $(".hamburger");
+
+$hamburger.on('click', function() {
+
+	if (!$hamburger.hasClass("active")) {
+		$hamburger.addClass("active");
+
+	} else {
+		$hamburger.removeClass("active");
+
+	}
+
+
+});

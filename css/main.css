@@ -220,3 +220,38 @@ body main footer {
       text-align: center; }
     body main .skills ul li .desc p {
       text-align: center; } }
+
+@media screen and (max-width: 750px) {
+  body .nav-container nav {
+    padding-top: 0; }
+    body .nav-container nav ul li {
+      display: none; }
+    body .nav-container nav ul .hamburger {
+      z-index: 100;
+      cursor: pointer;
+      cursor: hand;
+      width: 60px;
+      height: 60px;
+      display: block;
+      left: 10px;
+      margin-top: 10px;
+      border: 0; }
+      body .nav-container nav ul .hamburger span {
+        display: block;
+        width: 45px;
+        border-bottom: 4px solid #fafafa;
+        position: relative;
+        transition: all 300ms ease-in-out;
+        top: 10px; }
+      body .nav-container nav ul .hamburger .middle {
+        top: 20px; }
+      body .nav-container nav ul .hamburger .bottom {
+        top: 30px; }
+    body .nav-container nav ul .active .top {
+      transform: translateY(17px) rotate(45deg); }
+    body .nav-container nav ul .active .middle {
+      opacity: 0; }
+    body .nav-container nav ul .active .bottom {
+      transform: translateY(-12px) rotate(-45deg); }
+    body .nav-container nav .button {
+      display: none; } }
