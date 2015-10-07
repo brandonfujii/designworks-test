@@ -129,7 +129,7 @@ body main .skills {
     body main .skills ul li .graphic {
       float: left;
       display: inline-block;
-      width: 40%; }
+      width: 35%; }
       body main .skills ul li .graphic .circle {
         margin: 0 auto;
         background: url(../img/landscape.jpg) center center no-repeat;
@@ -147,7 +147,7 @@ body main .skills {
           top: 25%; }
     body main .skills ul li .desc {
       display: inline-block;
-      width: 60%;
+      width: 65%;
       float: left;
       padding-left: 5%;
       padding-right: 5%; }
