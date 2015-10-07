@@ -202,7 +202,9 @@ body {
 					}
 
 					.desc {
-
+						display: inline-block;
+						width: 60%;
+						float: left;
 						padding-left: 5%;
 						padding-right: 5%;
 
@@ -223,5 +225,34 @@ body {
 		}
 
 
+	}
+}
+
+
+@media screen and (max-width: 870px) {
+	body {
+		main {
+			.skills {
+				ul {
+					li{
+						.graphic {
+							width: 100%;
+
+						}
+						.desc {
+							margin-top: 25px;
+							width: 100%;
+
+							h2 {
+								text-align: center;
+							}
+							p {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
