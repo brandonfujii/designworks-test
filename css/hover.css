@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.nav-container {
+  background-color: #2F363B;
+}
+
+.grid {
+  background-color: #fafafa;
+}
+h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  padding-top: 140px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.row {
+  text-align: center;
+}
+
+.r1 {
+  padding-top: 60px;
+}
+
+.box {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;  
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  overflow: hidden;
+  display: inline-block;
+
+}
+.box,
+.box * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.box img {
+  width: 115%;
+  height: 115%;
+}
+
+
+.box .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+
+}
+
+.box .info h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-top: 50%;
+  padding-bottom: 15px;
+}
+
+.box .img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.box .info p {
+  font-size: 1em;
+  position: relative;
+  color: #fafafa;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.25em;
+}
+.box  a:hover .img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.box  a:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+.box .info {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.box a:hover .info {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+

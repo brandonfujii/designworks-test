@@ -1,0 +1,227 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+$head: "Raleway", Arial, Helvetica, sans-serif;
+$body: "Lato", Arial, Helvetica, sans-serif;
+$serif: "Droid Serif", Arial, Helvetica, sans-serif;
+$black: #2F363B;
+$purple: #5C4384;
+
+* { box-sizing: border-box; }
+
+@mixin font($weight, $family: $body, $size: 1em, $color: #fafafa) {
+	font-size: $size;
+	font-family: $family;
+	font-weight: $weight;
+	color: $color;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+@mixin tag() {
+	@include font(400);
+	cursor: pointer;
+	cursor: hand;
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: transparent;
+
+
+	&:hover {
+		border-color: #fafafa;
+						
+	}
+}
+
+@mixin sect($background: #fafafa) {
+	width: 100%;
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@mixin title($title: $black) {
+	@include font(300, $head, 3em, $title);
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {		
+	.nav-container {
+			z-index: 10;
+			width: 100%;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			 -o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;	
+			position: fixed;
+			nav {
+				position: relative;
+				padding-top: 30px;
+				@include font(400);
+
+				ul {
+					text-align: center;
+
+					li {
+						position: relative;
+						margin-right: 40px;
+						@include tag();
+						font-size: 1.2em;
+
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							text-decoration: none;
+							color: #fafafa;
+							padding: 7px;
+						}
+					}
+
+					li.active {
+						border-color: #fafafa;
+					}
+				}
+				.button  {
+					float: right;
+					top: -35px;
+					margin-right: 40px;
+				}
+			}
+
+
+		}
+
+	.active {
+		background-color: $black;
+	}
+
+	header {
+		width: 100%;
+		height: 100vh;
+		background-color: $black;
+		background: url(../img/skateboard.jpg) center center no-repeat fixed;
+		background-size: cover;
+
+
+		h1 {
+			@include font(300, $body, 4em);
+			text-align: center;
+			margin: 0 auto;
+			position: relative;
+			top: 40%;
+		}
+	}
+
+	main {
+		.about {
+
+			@include sect(#2C3E50);
+
+			h1 {
+				@include title(#fafafa);
+			}
+
+			.pic {
+				overflow: hidden;
+				height: 200px;
+				width: 200px;
+				border-radius: 150px;
+				margin: 25px auto;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+			}
+
+			p {
+
+				@include font(300, $body, 1.5em);
+				width: 75%;
+				margin: 0 auto;
+				line-height: 1.5em;
+				padding-bottom: 15px;
+			}
+		}
+
+		.skills {
+			@include sect();
+
+			h1 {
+				@include title();
+			}
+			ul {
+				li {
+					padding: 20px;
+					.graphic {
+						float: left;
+						display: inline-block;
+						width: 40%;
+
+						.circle {
+							margin: 0 auto;
+							background: url(../img/landscape.jpg) center center no-repeat;
+							background-size: 100% 100%;
+							width:200px;
+							height: 200px;
+							border-radius: 100px;
+							svg {
+								fill: #fafafa;
+								display: block;
+								margin: 0 auto;
+								height: 50%;
+								width: 50%;
+								position: relative;
+								top: 25%;
+							}
+						}
+						
+					}
+
+					.desc {
+
+						padding-left: 5%;
+						padding-right: 5%;
+
+
+						h2 {
+							@include font(700, $head, 2em, $black);
+							padding-top: 30px;
+							padding-bottom: 20px;
+						}
+
+						p {
+							@include font(300, $body, 1.5em, $black);
+							line-height: 1.5em;
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+}

@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+* {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body .nav-container {
+  z-index: 10;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed; }
+  body .nav-container nav {
+    position: relative;
+    padding-top: 30px;
+    font-size: 1em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fafafa; }
+    body .nav-container nav ul {
+      text-align: center; }
+      body .nav-container nav ul li {
+        position: relative;
+        margin-right: 40px;
+        font-size: 1em;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #fafafa;
+        cursor: pointer;
+        cursor: hand;
+        display: inline-block;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background: transparent;
+        font-size: 1.2em; }
+        body .nav-container nav ul li:hover {
+          border-color: #fafafa; }
+        body .nav-container nav ul li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: #fafafa;
+          padding: 7px; }
+      body .nav-container nav ul li.active {
+        border-color: #fafafa; }
+    body .nav-container nav .button {
+      float: right;
+      top: -35px;
+      margin-right: 40px; }
+
+body .active {
+  background-color: #2F363B; }
+
+body header {
+  width: 100%;
+  height: 100vh;
+  background-color: #2F363B;
+  background: url(../img/skateboard.jpg) center center no-repeat fixed;
+  background-size: cover; }
+  body header h1 {
+    font-size: 4em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 40%; }
+
+body main .about {
+  width: 100%;
+  background-color: #2C3E50;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body main .about h1 {
+    font-size: 3em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  body main .about .pic {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    margin: 25px auto; }
+    body main .about .pic img {
+      width: 100%;
+      height: 100%; }
+  body main .about p {
+    font-size: 1.5em;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding-bottom: 15px; }
+
+body main .skills {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body main .skills h1 {
+    font-size: 3em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2F363B;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  body main .skills ul li {
+    padding: 20px; }
+    body main .skills ul li .graphic {
+      float: left;
+      display: inline-block;
+      width: 40%; }
+      body main .skills ul li .graphic .circle {
+        margin: 0 auto;
+        background: url(../img/landscape.jpg) center center no-repeat;
+        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; }
+        body main .skills ul li .graphic .circle svg {
+          fill: #fafafa;
+          display: block;
+          margin: 0 auto;
+          height: 50%;
+          width: 50%;
+          position: relative;
+          top: 25%; }
+    body main .skills ul li .desc {
+      padding-left: 5%;
+      padding-right: 5%; }
+      body main .skills ul li .desc h2 {
+        font-size: 2em;
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: #2F363B;
+        padding-top: 30px;
+        padding-bottom: 20px; }
+      body main .skills ul li .desc p {
+        font-size: 1.5em;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        color: #2F363B;
+        line-height: 1.5em; }
