@@ -4,11 +4,11 @@ body .button {
   font-size: 16px;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #fafafa;
+  color: #7FC0E5;
   cursor: pointer;
   cursor: hand;
   border-radius: 5px;
-  border: 1px solid #fafafa;
+  border: 1px solid #7FC0E5;
   display: inline-block;
   padding: 12px 20px;
   position: relative;
@@ -17,12 +17,12 @@ body .button {
   -moz-osx-font-smoothing: grayscale; }
 
 body .button-fill {
-  color: #fafafa;
+  color: #7FC0E5;
   overflow: hidden; }
 
 body .button:hover {
   color: #fafafa;
-  border-color: #5C4384;
+  border-color: #7FC0E5;
 }
 body .button-fill::before {
   content: '';
@@ -34,7 +34,7 @@ body .button-fill::before {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #5C4384;
+  background: #7FC0E5;
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
   -webkit-transform: scale3d(1, 2, 1);
