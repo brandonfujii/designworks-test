@@ -103,6 +103,9 @@ body {
 					li.hamburger {
 						display:none;
 					}
+					li.mobile {
+						display: none;
+					}
 
 					li.active {
 						border-color: #fafafa;
@@ -368,7 +371,11 @@ body {
 							.bottom {
 								top: 30px;
 							}
+						
+						}
 
+						li.mobile {
+							
 						}
 
 				}

@@ -13,12 +13,22 @@ var $button = $(".button");
 
 $button.on("click", function() {
 	var $sect = $("#" + $(this).data("nav"));
-	var $navHeight = $(".nav-container nav").height();
+	// var $navHeight = $(".nav-container nav").height();
 
 	if ($sect) {
-		$sect.velocity("scroll", {duration: 750, offset: -$navHeight});
+		$sect.velocity("scroll", {duration: 750, offset: 0});
 	}
 });
+
+$connectOption = $("li.mobile");
+
+$connectOption.on("click", function() {
+	var $sect = $("#" + $(this).data("nav"));
+
+	if ($sect) {
+		$sect.velocity("scroll", {duration: 750, offset: -70});
+	}
+})
 
 var $socialIcon = $(".connect ul li a"); 
 

@@ -56,6 +56,8 @@ body .nav-container {
           border-color: #fafafa; }
       body .nav-container nav ul li.hamburger {
         display: none; }
+      body .nav-container nav ul li.mobile {
+        display: none; }
       body .nav-container nav ul li.active {
         border-color: #fafafa; }
     body .nav-container nav .button {
