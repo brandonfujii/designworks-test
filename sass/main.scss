@@ -283,7 +283,7 @@ body {
 }
 
 
-@media screen and (max-width: 870px) {
+@media handheld, screen and (max-width: 870px) {
 	body {
 		main {
 			.skills {
@@ -311,7 +311,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media handheld, screen and (max-width: 750px) {
 	body {
 		.nav-container {
 			background-color: $black;

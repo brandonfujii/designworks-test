@@ -213,7 +213,7 @@ body main footer {
     padding-top: 25px;
     text-align: center; }
 
-@media screen and (max-width: 870px) {
+@media handheld, screen and (max-width: 870px) {
   body main .skills ul li .graphic {
     width: 100%; }
   body main .skills ul li .desc {
@@ -224,7 +224,7 @@ body main footer {
     body main .skills ul li .desc p {
       text-align: center; } }
 
-@media screen and (max-width: 750px) {
+@media handheld, screen and (max-width: 750px) {
   body .nav-container {
     background-color: #2F363B; }
     body .nav-container nav {
