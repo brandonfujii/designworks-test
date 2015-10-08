@@ -262,4 +262,7 @@ body main footer {
         body .nav-container nav ul li.hamburger .bottom {
           top: 30px; }
       body .nav-container nav .button {
-        display: none; } }
+        display: none; }
+  body header h1 {
+    top: 38%;
+    font-size: 2.75em; } }
