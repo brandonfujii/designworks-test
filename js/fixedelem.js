@@ -36,18 +36,15 @@ $socialIcon.on("mouseleave", function() {
 	}, 200);
 })
 
+var $menuIcon = $(".nav-container nav ul .hamburger");
+var $menuItem = $(".item");
+$menuIcon.on("click", function() {
+	$menuItem.velocity("stop");
 
-var $hamburger = $(".hamburger");
-
-$hamburger.on('click', function() {
-
-	if (!$hamburger.hasClass("active")) {
-		$hamburger.addClass("active");
-
+	if ($menuItem.is(":hidden")) {
+		$menuItem.velocity("fadeIn", {duration: 300});
 	} else {
-		$hamburger.removeClass("active");
-
+		$menuItem.velocity("fadeOut", {duration: 300});
 	}
 
-
-});
+})

@@ -27,6 +27,7 @@ body .nav-container {
     body .nav-container nav ul {
       text-align: center; }
       body .nav-container nav ul li {
+        display: inline-block;
         position: relative;
         margin-right: 40px;
         font-size: 1em;
@@ -44,8 +45,6 @@ body .nav-container {
         transition: all 0.3s ease-in-out;
         background: transparent;
         font-size: 1.2em; }
-        body .nav-container nav ul li:hover {
-          border-color: #fafafa; }
         body .nav-container nav ul li a {
           display: block;
           width: 100%;
@@ -53,6 +52,10 @@ body .nav-container {
           text-decoration: none;
           color: #fafafa;
           padding: 7px; }
+        body .nav-container nav ul li:hover {
+          border-color: #fafafa; }
+      body .nav-container nav ul li.hamburger {
+        display: none; }
       body .nav-container nav ul li.active {
         border-color: #fafafa; }
     body .nav-container nav .button {
@@ -222,36 +225,41 @@ body main footer {
       text-align: center; } }
 
 @media screen and (max-width: 750px) {
-  body .nav-container nav {
-    padding-top: 0; }
-    body .nav-container nav ul li {
-      display: none; }
-    body .nav-container nav ul .hamburger {
-      z-index: 100;
-      cursor: pointer;
-      cursor: hand;
-      width: 60px;
-      height: 60px;
-      display: block;
-      left: 10px;
-      margin-top: 10px;
-      border: 0; }
-      body .nav-container nav ul .hamburger span {
+  body .nav-container {
+    background-color: #2F363B; }
+    body .nav-container nav {
+      padding-top: 0; }
+      body .nav-container nav ul li {
+        display: none;
+        margin: 0 auto; }
+        body .nav-container nav ul li:hover {
+          border-color: transparent;
+          background-color: #5C4384; }
+      body .nav-container nav ul li.active {
+        border: 0;
+        background-color: #5C4384; }
+      body .nav-container nav ul li.hamburger {
+        z-index: 100;
+        cursor: pointer;
+        cursor: hand;
+        width: 60px;
+        height: 60px;
         display: block;
-        width: 45px;
-        border-bottom: 4px solid #fafafa;
-        position: relative;
-        transition: all 300ms ease-in-out;
-        top: 10px; }
-      body .nav-container nav ul .hamburger .middle {
-        top: 20px; }
-      body .nav-container nav ul .hamburger .bottom {
-        top: 30px; }
-    body .nav-container nav ul .active .top {
-      transform: translateY(17px) rotate(45deg); }
-    body .nav-container nav ul .active .middle {
-      opacity: 0; }
-    body .nav-container nav ul .active .bottom {
-      transform: translateY(-12px) rotate(-45deg); }
-    body .nav-container nav .button {
-      display: none; } }
+        margin-top: 10px;
+        border: 0; }
+        body .nav-container nav ul li.hamburger:hover {
+          background-color: transparent; }
+        body .nav-container nav ul li.hamburger span {
+          display: block;
+          width: 35px;
+          border-bottom: 2px solid #fafafa;
+          position: relative;
+          transition: all 300ms ease-in-out;
+          top: 10px;
+          margin: 0 auto; }
+        body .nav-container nav ul li.hamburger .middle {
+          top: 20px; }
+        body .nav-container nav ul li.hamburger .bottom {
+          top: 30px; }
+      body .nav-container nav .button {
+        display: none; } }
