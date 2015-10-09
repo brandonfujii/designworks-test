@@ -87,7 +87,7 @@
       font-weight: 300;
       color: #fafafa;
       line-height: 1.5em; }
-  .box a:hover .img {
+  .box a.touch:hover .img {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -96,7 +96,7 @@
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2); }
-  .box a:hover .info {
+  .box a.touch:hover .info {
     visibility: visible;
     opacity: 1;
     -webkit-transform: translateY(0);

@@ -80,11 +80,11 @@ $(window).resize(function() {
 function isTouchDevice() {
     return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
-if (isTouchDevice() === true) {
-    alert('Touch Device'); //your logic for touch device here
-} else {
-    alert('Not a Touch Device'); //your logic for non touch device here
-}
 
 
-isTouchDevice();
+var $cssImage = $(".box a");
+$(document).ready(function() {
+	if (isTouchDevice()) {
+		$cssImage.removeClass("touch");
+	}
+})
