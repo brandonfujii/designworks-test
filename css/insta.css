@@ -9,11 +9,35 @@
   display: table;
   clear: both; }
 
+body .loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background-color: #2F363B; }
+  body .loading hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 20px;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+body .nav-container {
+  background-color: #2F363B; }
+
 body main .gallery {
   width: 100%;
   background-color: #fafafa;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-top: 10%; }
   body main .gallery h1 {
     font-size: 3em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -22,3 +46,21 @@ body main .gallery {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px; }
+  body main .gallery ul {
+    padding-top: 20px;
+    text-align: center; }
+    body main .gallery ul li {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      overflow: hidden; }
+      body main .gallery ul li:hover img {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2); }
+      body main .gallery ul li img {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }

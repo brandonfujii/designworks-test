@@ -1,3 +1,23 @@
+
+$(document).ready(function() {
+	loadGrow();
+	window.setTimeout(load, 3000);
+});
+
+function load() {
+	$loading.fadeOut(500);
+
+}
+
+
+function loadGrow() {
+	$loadbar.velocity({
+		width: "100%"
+	}, 2750);
+
+}
+
+
 $(document).scroll(function(){
 	var $navBar = $(".nav-container");
 	var scrollPos = $(this).scrollTop();
