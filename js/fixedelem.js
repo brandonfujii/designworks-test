@@ -48,6 +48,7 @@ $socialIcon.on("mouseleave", function() {
 
 var $menuIcon = $(".nav-container nav ul .hamburger");
 var $menuItem = $(".item");
+
 $menuIcon.on("click", function() {
 	$menuItem.velocity("stop");
 
@@ -57,4 +58,20 @@ $menuIcon.on("click", function() {
 		$menuItem.velocity("fadeOut", {duration: 300});
 	}
 
+})
+
+
+$(window).resize(function() {
+
+	var windowWidth = $(window).width();
+
+	if (windowWidth > 750) {
+		$menuItem.css({
+			"display" : "inline-block",
+			"opacity" : "1"
+		});
+		$connectOption.css("display", "none");
+	} else {
+		$menuItem.css("display", "none");
+	}
 })

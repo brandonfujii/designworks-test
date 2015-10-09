@@ -236,10 +236,10 @@ body main footer {
         margin: 0 auto; }
         body .nav-container nav ul li:hover {
           border-color: transparent;
-          background-color: #5C4384; }
+          background-color: #555555; }
       body .nav-container nav ul li.active {
         border: 0;
-        background-color: #5C4384; }
+        background-color: #555555; }
       body .nav-container nav ul li.hamburger {
         z-index: 100;
         cursor: pointer;
