@@ -1,9 +1,8 @@
 (function(){
-    //Place your own Instagram client_id below. Go to https://instagram.com/developer/clients/manage/ and register your app to get a client ID
   var client_id = '4c26db848b844a449d8fa9c4dad36c17';
   var user_id = '40398314';
 
-  var app = angular.module('instafeed', []);
+  var app = angular.module('InstagramApp', []);
 
   app.factory("InstagramAPI", ['$http', function($http) {
     return {
