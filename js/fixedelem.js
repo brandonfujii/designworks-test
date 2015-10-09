@@ -83,8 +83,19 @@ function isTouchDevice() {
 
 
 var $cssImage = $(".box a");
+var $grid = $(".grid");
 $(document).ready(function() {
 	if (isTouchDevice()) {
-		$cssImage.removeClass("touch");
+		$cssImage.removeClass("no-touch");
+		$grid.addClass("touch");
+		
 	}
 })
+
+var $touchGridImage = $(".touch .box a");
+
+$touchGridImage.on("click", function() {
+	$(this).toggleClass("active");
+})
+
+
