@@ -77,25 +77,4 @@ $(window).resize(function() {
 	}
 })
 
-function isTouchDevice() {
-    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
-}
-
-
-var $cssImage = $(".box a");
-var $grid = $(".grid");
-$(document).ready(function() {
-	if (isTouchDevice()) {
-		$cssImage.removeClass("no-touch");
-		$grid.addClass("touch");
-		
-	}
-})
-
-var $touchGridImage = $(".grid.touch .box a");
-
-$touchGridImage.on("click", function() {
-	$(this).toggleClass("active");
-})
-
 
