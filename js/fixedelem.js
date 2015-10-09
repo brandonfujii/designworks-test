@@ -1,23 +1,4 @@
 
-$(document).ready(function() {
-	loadGrow();
-	window.setTimeout(load, 3000);
-});
-
-function load() {
-	$loading.fadeOut(500);
-
-}
-
-
-function loadGrow() {
-	$loadbar.velocity({
-		width: "100%"
-	}, 2750);
-
-}
-
-
 $(document).scroll(function(){
 	var $navBar = $(".nav-container");
 	var scrollPos = $(this).scrollTop();
@@ -95,3 +76,15 @@ $(window).resize(function() {
 		$menuItem.css("display", "none");
 	}
 })
+
+function isTouchDevice() {
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+if (isTouchDevice() === true) {
+    alert('Touch Device'); //your logic for touch device here
+} else {
+    alert('Not a Touch Device'); //your logic for non touch device here
+}
+
+
+isTouchDevice();
