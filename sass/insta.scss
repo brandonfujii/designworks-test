@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+$head: "Raleway", Arial, Helvetica, sans-serif;
+$body: "Lato", Arial, Helvetica, sans-serif;
+$serif: "Droid Serif", Arial, Helvetica, sans-serif;
+$black: #2F363B;
+$purple: #5C4384;
+
+* { box-sizing: border-box; }
+
+@mixin font($weight, $family: $body, $size: 1em, $color: #fafafa) {
+	font-size: $size;
+	font-family: $family;
+	font-weight: $weight;
+	color: $color;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+@mixin tag() {
+	@include font(400);
+	cursor: pointer;
+	cursor: hand;
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: transparent;
+
+
+}
+
+@mixin sect($background: #fafafa) {
+	width: 100%;
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@mixin title($title: $black) {
+	@include font(300, $head, 3em, $title);
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+body {
+	main {
+		.gallery {
+			@include sect();
+
+			h1 {
+				@include title();
+			}
+		}
+	}
+}

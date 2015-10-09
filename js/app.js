@@ -18,7 +18,7 @@
     }
   }]);
 
-  app.controller('ShowImages', function($scope, InstagramAPI){
+  app.controller('ImageController', function($scope, InstagramAPI){
     $scope.layout = 'grid';
     $scope.data = {};
     $scope.pics = [];
