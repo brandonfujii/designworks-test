@@ -92,10 +92,10 @@ body {
 	main {
 		.gallery {
 			@include sect();
-			padding-top: 10%;
 
 			h1 {
 				@include title();
+				padding-top: 100px;
 			}
 
 			ul {
@@ -120,6 +120,18 @@ body {
 					    -moz-transition: all 0.3s ease-in-out;
 					    transition: all 0.3s ease-in-out;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media handheld, screen and (max-width: 420px) {
+	body {
+		main {
+			.gallery {
+				h1 {
+					font-size: 2.5em;
 				}
 			}
 		}

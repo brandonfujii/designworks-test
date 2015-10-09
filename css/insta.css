@@ -36,8 +36,7 @@ body main .gallery {
   width: 100%;
   background-color: #fafafa;
   padding-top: 50px;
-  padding-bottom: 50px;
-  padding-top: 10%; }
+  padding-bottom: 50px; }
   body main .gallery h1 {
     font-size: 3em;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -45,7 +44,8 @@ body main .gallery {
     color: #2F363B;
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-top: 100px; }
   body main .gallery ul {
     padding-top: 20px;
     text-align: center; }
@@ -64,3 +64,7 @@ body main .gallery {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
+
+@media handheld, screen and (max-width: 420px) {
+  body main .gallery h1 {
+    font-size: 2.5em; } }
