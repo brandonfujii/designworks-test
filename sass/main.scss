@@ -394,3 +394,20 @@ body {
 		}
 	}
 }
+
+
+@media handheld, screen and (max-width: 540px) {
+	body {
+		main {
+			.connect {
+				ul {
+					li {
+						a {
+							font-size: 0.75em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

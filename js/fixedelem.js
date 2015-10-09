@@ -92,7 +92,7 @@ $(document).ready(function() {
 	}
 })
 
-var $touchGridImage = $(".touch .box a");
+var $touchGridImage = $(".grid.touch .box a");
 
 $touchGridImage.on("click", function() {
 	$(this).toggleClass("active");

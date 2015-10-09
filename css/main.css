@@ -268,3 +268,7 @@ body main footer {
   body header h1 {
     top: 38%;
     font-size: 2.75em; } }
+
+@media handheld, screen and (max-width: 540px) {
+  body main .connect ul li a {
+    font-size: 0.75em; } }
