@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+* {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body main .gallery {
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  body main .gallery h1 {
+    font-size: 3em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #2F363B;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
